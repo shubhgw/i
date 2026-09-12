@@ -1,6 +1,3 @@
-> ### Try to open in laptop if possible 😌
-
-#### 🌐 The site is not mobile compatible currently but in some days I will make it compatible !
 
 # 🙏 Welcome to the README file of **shubhgw**'s <a href="https://shubhgw.github.io/portfolioshubhgw">PORTFOLIO</a> 👈
 
@@ -24,7 +21,7 @@
 
 <pre>
 Directory structure:
-└── shubhgw-portfolioshubhgw/
+└── portfolio shubhgw/
     ├── README.md
     ├── index.html
     ├── general.css
@@ -35,7 +32,8 @@ Directory structure:
     │   ├── page4.css
     │   └── page5.css
     ├── bank/
-    │   └── all images
+    │   └── images
+    │   └── background video
     └── .github/
         └── workflows/
             └── static.yml
