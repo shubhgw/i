@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-family: playwrite de grund;
+    /* fonts taken from googlefonts :) : playfair display,Quintessential, playwrite de grund   */
+}
+
+:root {
+    --background-color: #47b8ff;
+    --color1: #83ff75;
+    --color1light1: #c7ffc1;
+    --color1light2: #f1fff0;
+    --color2: #78d6ffb6;
+    --color2light: #48c5fa6a;
+    --color3: #fdba33;
+
+    --page-1-background-color: #6ddaff;
+    --page-2-background-color: #74ff8d;
+    --page-3-background-color: #ffc45d;
+    --page-4-background-color: #be88ff;
+    --page-5-background-color: #ff8b8b;
+
+    --page-padding: 50px 10px;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.background-video {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    left: 0;
+    object-position: center;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--page-padding);
+
+}
+
+.heading {
+    text-shadow: 0px 0px 20px rgb(7, 197, 255);
+    font-weight: bold;
+    font-size: clamp(30px, 3.55vw, 40px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr.full-width-line {
+    width: 100%;
+    border: 0;
+    border-top: 5px solid rgb(99, 162, 255);
+}
+
+.glassy {
+    border: 2px solid hsla(0, 0%, 100%, 0.211);
+    border-bottom-color: hsla(0, 0%, 100%, 0.764);
+    border-top-color: hsla(0, 0%, 100%, 0.764);
+    background: hsla(0, 0%, 100%, 0);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 20px rgba(0, 200, 255, 0.249);
+    color: rgb(20, 20, 20);
+    transition: all 0.3s;
+    border-radius: 100px;
+}
+
+.glassy:hover {
+    border: 2px solid hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 100%, 0.2);
+    backdrop-filter: blur(6px);
+    box-shadow: inset 10 10 8px 10px hsl(0, 0%, 0%);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+@media (min-aspect-ratio:16/9){
+    .background-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .background-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+span,p,a{
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
+}

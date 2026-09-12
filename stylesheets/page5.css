@@ -1,0 +1,61 @@
+.page5 {
+    padding-bottom: 70px;
+}
+
+.extra-links-div,
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 780px;
+}
+
+.thanks-heading {
+    margin-top: 20px;
+}
+
+.extra-links,
+.social-button {
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.extra-links:hover,
+.social-button:hover {
+    scale: 1.05;
+}
+
+.extra-links img,
+.social img {
+    width: 40px;
+}
+
+
+.exercism-logo {
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width:790px) {
+
+    .extra-links-div,
+    .social {
+        width: 490px;
+    }
+}
+@media only screen and (max-width:500px) {
+
+    .extra-links-div,
+    .social {
+        width: 80vw;
+        flex-direction: column;
+    }
+}

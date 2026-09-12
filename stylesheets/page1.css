@@ -1,0 +1,114 @@
+.page1{
+    padding-bottom: 15px;
+}
+
+.shubhsphoto {
+    width: clamp(150px, 250px, 300px);
+    border: 2px solid rgb(187, 187, 255);
+    border-radius: 500px;
+    transition: all 0.5s;
+}
+
+.shubhsphoto:hover {
+    box-shadow: 5px 5px 90px rgb(25, 71, 255);
+}
+
+.hiiandname {
+    font-family: 'playwrite de grund';
+    font-size: 30px;
+    text-align: center;
+    transition: all 0.5s;
+    text-shadow: 0px 0px 30px rgba(7, 197, 255, 0.148);
+}
+
+.hiiandname:hover {
+    text-shadow: 0px 0px 20px rgb(7, 197, 255);
+
+}
+
+.myname {
+    text-shadow: 0px 0px 30px rgba(7, 197, 255, 0.419);
+    font-family: 'Quintessential';
+    font-size: clamp(50px, 10vw, 70px);
+    font-weight: bold;
+}
+
+.mainskills .skills-icon {
+    width: 40px;
+}
+
+.secskills .skills-icon {
+    width: 30px;
+}
+
+.skills-div,
+.mainskills-div,
+.secskills-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: normal;
+}
+
+.mainskills-div {
+    width: 70vw;
+}
+
+.secskills-div {
+    width: 50vw;
+}
+
+.mainskills,
+.secskills {
+    border-radius: 100px;
+    display: flex;
+    column-gap: 8px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.mainskills {
+    font-size: 25px;
+    padding: 8px 28px;
+    margin: 10px;
+}
+
+.secskills {
+    font-size: 20px;
+    padding: 8px 20px;
+    margin: 10px;
+}
+
+.mainskills:hover,
+.secskills:hover {
+    scale: 1.05;
+}
+
+
+.mainskills:nth-child(4) img {
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:655px) {
+    .mainskills {
+        font-size: 20px;
+        padding: 8px 12px;
+        margin: 8px;
+    }
+
+    .secskills {
+        font-size: 18px;
+        padding: 8px 12px;
+        margin: 8px;
+    }
+
+    .mainskills-div {
+        width: 90vw;
+    }
+
+    .secskills-div {
+        width: 80vw;
+    }
+}

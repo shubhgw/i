@@ -1,0 +1,51 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    flex-wrap: wrap;
+    align-items: normal;
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.year-icon {
+    width: 40px;
+}
+
+.timeline .edu p {
+    font-size: clamp(20px, 1.6vw, 30px);
+    text-align: center;
+}
+
+.edu {
+    padding: 10px 40px;
+    border-radius: 40px;
+    margin: 10px 20px;
+}
+
+.edu:hover {
+    scale: 1.04;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .edu {
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin: 10px ;
+        gap: 5px;
+    }
+
+    .timeline .edu p {
+        font-size: 22px;
+    }
+
+    .timeline {
+        row-gap: 15px;
+    }
+
+}
