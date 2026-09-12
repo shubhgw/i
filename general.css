@@ -33,9 +33,6 @@ body{
     position: fixed;
     right: 0;
     left: 0;
-    top: 0;
-    bottom: 0;
-    object-position: center;
 }
 
 @keyframes fadeIn {
@@ -97,14 +94,14 @@ hr.full-width-line {
 
 @media (min-aspect-ratio:16/9){
     .background-video{
-        width: 100%;
+        width: 100vw;
         height: auto;
     }
 }
 @media (max-aspect-ratio:16/9){
     .background-video{
         width: auto;
-        height: 100%;
+        height: 100dvh;
     }
 }
 
