@@ -38,11 +38,9 @@
     width: 40px;
 }
 
-
-.exercism-logo {
-    border-radius: 10px;
+#hackerearth {
+    width: 35px;
 }
-
 
 @media only screen and (max-width:790px) {
 
@@ -51,6 +49,7 @@
         width: 490px;
     }
 }
+
 @media only screen and (max-width:500px) {
 
     .extra-links-div,
