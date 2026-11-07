@@ -12,7 +12,7 @@ html {
 }
 
 :root {
-  --background-color: #47b8ff;
+  --background-color: rgba(205, 252, 112, 0.394);
   --color1: #83ff75;
   --color1light1: #c7ffc1;
   --color1light2: #f1fff0;
@@ -51,7 +51,7 @@ body {
     transform: scaleX(0);
   }
   to {
-    transform: skewX(1);
+    transform: scaleX(1);
   }
 }
 
@@ -94,10 +94,10 @@ body {
 }
 
 .heading {
-  padding: 2px 35px;
+  /* padding: 2px 35px; */
   border-radius: 15px;
   font-weight: normal;
-  font-size: clamp(30px, 3.55vw, 40px);
+  font-size: clamp(35px, 3.8vw, 40px);
   text-align: center;
   margin-bottom: 20px;
   font-family: "Bricolage Grotesque";
@@ -174,6 +174,7 @@ footer {
   align-items: center;
   flex-direction: column;
   margin: 20px;
+  margin-bottom: 350px;
 }
 
 footer span {

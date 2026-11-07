@@ -54,7 +54,7 @@
 }
 
 .secskills-div {
-  width: 50vw;
+  width: clamp(600px, 50vw, 700px);
 }
 
 .mainskills,
@@ -93,16 +93,15 @@
   border-radius: 10px;
 } */
 
-@media only screen and (max-width: 655px) {
+@media only screen and (max-width: 770px) {
   .mainskills {
-    font-size: 20px;
-    padding: 8px 12px;
+    font-size: 24px;
+    padding: 8px 20px;
     margin: 8px;
   }
 
   .secskills {
     font-size: 18px;
-    padding: 8px 12px;
     margin: 8px;
   }
 
@@ -115,9 +114,25 @@
   }
 }
 
+@media only screen and (max-width: 590px) {
+  .shubhsphoto {
+    width: 220px;
+  }
+  .mainskills {
+    font-size: 20px;
+  }
+  .secskills {
+    padding: 8px 24px;
+  }
+  .mainskills-div,
+  .secskills-div {
+    width: 95vw;
+  }
+}
 
 .text-focus-in {
-  -webkit-animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
   animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
@@ -135,7 +150,7 @@
 }
 @keyframes text-focus-in {
   0% {
-    -webkit-filter: blur(12px); 
+    -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }

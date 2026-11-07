@@ -1,5 +1,5 @@
 .page5 {
-  padding-bottom: 70px;
+  /* padding-bottom: 70px;   */
 }
 
 .extra-links-div,
@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   column-gap: 15px;
-  font-size: 25px;
+  font-size: 20px;
   justify-content: center;
   animation: extraLinksAnimation linear both;
   animation-timeline: view();
@@ -44,6 +44,7 @@
 .extra-links:hover,
 .social-button:hover {
   scale: 1.05;
+  font-weight: bold;
 }
 
 .extra-links img,
@@ -55,11 +56,16 @@
   width: 35px;
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 800px) {
   .extra-links-div,
   .social {
-    width: 490px;
+    width: 90vw;
+    flex-wrap: wrap;
   }
+  /* .social-button,
+  .extra-links {
+    width: 25vw;
+  } */
 }
 
 @media only screen and (max-width: 500px) {
@@ -68,4 +74,5 @@
     width: 80vw;
     flex-direction: column;
   }
+
 }

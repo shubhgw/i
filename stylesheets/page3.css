@@ -46,19 +46,44 @@
   scale: 1.04;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   .edu {
     padding: 10px 20px;
-    border-radius: 20px;
-    margin: 10px;
+    border-radius: 25px;
+    margin: 5px;
     gap: 5px;
   }
 
-  .timeline .edu p {
+  /* .timeline .edu p {
     font-size: 22px;
-  }
+  } */
 
   .timeline {
     row-gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .edu {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .year {
+    font-size: 16px !important;
+    img {
+      width: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .year {
+    gap: 8px;
+  }
+  .edu3{
+    padding: 5px;
+  }
+  .edu4  p{
+    margin: 30px 5px;
   }
 }
