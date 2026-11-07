@@ -1,60 +1,71 @@
 .page5 {
-    padding-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .extra-links-div,
 .social {
-    display: flex;
-    flex-direction: row;
-    align-items: normal;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 780px;
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 780px;
 }
 
 .thanks-heading {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .extra-links,
 .social-button {
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-    font-size: 25px;
-    justify-content: center;
+  color: black;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 25px;
+  justify-content: center;
+  animation: extraLinksAnimation linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes extraLinksAnimation {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .extra-links:hover,
 .social-button:hover {
-    scale: 1.05;
+  scale: 1.05;
 }
 
 .extra-links img,
 .social img {
-    width: 40px;
+  width: 40px;
 }
 
 #hackerearth {
-    width: 35px;
+  width: 35px;
 }
 
-@media only screen and (max-width:790px) {
-
-    .extra-links-div,
-    .social {
-        width: 490px;
-    }
+@media only screen and (max-width: 790px) {
+  .extra-links-div,
+  .social {
+    width: 490px;
+  }
 }
 
-@media only screen and (max-width:500px) {
-
-    .extra-links-div,
-    .social {
-        width: 80vw;
-        flex-direction: column;
-    }
+@media only screen and (max-width: 500px) {
+  .extra-links-div,
+  .social {
+    width: 80vw;
+    flex-direction: column;
+  }
 }
