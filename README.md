@@ -1,7 +1,7 @@
 
-# 🙏 Welcome to the README file of **shubhgw**'s <a href="https://shubhgw.github.io/portfolioshubhgw">PORTFOLIO</a> 👈
+# 🙏 Welcome to the README file of **shubhgw**'s <a href="https://shubhgw.github.io/i">PORTFOLIO</a> 👈
 
-### <a href="https://shubhgw.github.io/portfolioshubhgw"> 🌐 Portfolio site : https://shubhgw.github.io/portfolioshubhgw </a>
+### <a href="https://shubhgw.github.io/i"> 🌐 Portfolio site : https://shubhgw.github.io/i </a>
 
 #### 🎨 I kept it simple in Neo-Brutalism Theme to Improve the Readability & Ease of access, I could have Add too many effects & Animations but I didn't because ......iykyk😁
 
