@@ -33,8 +33,8 @@
 
 @keyframes eduAnimation {
   0% {
-    transform: scale(0.3);
-    filter: blur(1px);
+    transform: scale(0);
+    /* filter: blur(3px); */
   }
   100% {
     transform: scale(1);
@@ -80,10 +80,10 @@
   .year {
     gap: 8px;
   }
-  .edu3{
+  .edu3 {
     padding: 5px;
   }
-  .edu4  p{
+  .edu4 p {
     margin: 30px 5px;
   }
 }

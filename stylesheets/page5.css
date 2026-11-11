@@ -9,7 +9,14 @@
   align-items: normal;
   justify-content: center;
   flex-wrap: wrap;
-  width: 780px;
+  max-width: 780px;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 20px;
+  gap: 10px;
+  animation: extraLinksAnimation linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .thanks-heading {
@@ -20,21 +27,21 @@
 .social-button {
   color: black;
   padding: 10px 20px;
-  margin: 10px;
   text-decoration: none;
   display: flex;
   align-items: center;
   column-gap: 15px;
   font-size: 20px;
   justify-content: center;
-  animation: extraLinksAnimation linear both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+}
+
+.social-button {
+  width: 25%;
 }
 
 @keyframes extraLinksAnimation {
   0% {
-    transform: scale(0.7);
+    transform: scale(0.5) translateY(100px);
   }
   100% {
     transform: scale(1);
@@ -56,23 +63,102 @@
   width: 35px;
 }
 
-@media only screen and (max-width: 800px) {
-  .extra-links-div,
-  .social {
-    width: 90vw;
-    flex-wrap: wrap;
+.github {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: auto;
+  animation: githubAnimations linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+
+  img {
+    width: 350px;
+    border-radius: 20px;
   }
-  /* .social-button,
-  .extra-links {
-    width: 25vw;
-  } */
 }
 
-@media only screen and (max-width: 500px) {
+@keyframes githubAnimations {
+  0% {
+    transform: scale(0);
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@media only screen and (max-width: 1155px) {
+  .github {
+    width: 720px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .social,
+  .extra-links-div {
+    width: 450px;
+  }
+  .social-button {
+    width: 35%;
+  }
+  .extra-links {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .github {
+    width: 360px;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .extra-links-div,
   .social {
-    width: 80vw;
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+  .social-button {
+    width: 70%;
+  }
+  .extra-links {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .github {
+    padding: 5px;
+    gap: 5px;
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .github {
+    width: 300px;
+  }
+  .github img {
+    width: 300px;
+  }
+  .extra-links-div,
+  .social {
+    width: 250px;
+    padding: 10px;
   }
 
+  .social-button {
+    width: 80%;
+  }
+  .extra-links {
+    width: 100%;
+    margin: 0px;
+  }
 }
